@@ -1,1 +1,3 @@
-# new_mac_setup
+# New Mac Setup
+
+## Getting Started
