@@ -10,9 +10,7 @@ Quick and easy setup for basic development environment on a new mac
 
 ### new-mac-setup.sh
 
-This script will...
-
-Install:
+This script will Install:
 
 - Homebrew
 - Git
