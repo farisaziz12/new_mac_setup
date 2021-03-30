@@ -15,7 +15,8 @@ This script will Install:
 - Homebrew
 - Git
 - Node
-- NVM
+- NVM (Setup with Node Version 14)
+- Yarn
 - Ruby
 - Tree
 - wget
@@ -36,5 +37,6 @@ This script will Install:
 - Github Desktop
 - Xcode Command Line Tools
 - Slack
+- [ZSH Spaceship Prompt](https://github.com/denysdovhan/spaceship-prompt/)
 
 It will also setup the git aliases defined in `gitconfig.txt` (Don't forget to update all credentials defined using '<>' with your own)
