@@ -39,4 +39,4 @@ This script will Install:
 - Slack
 - [ZSH Spaceship Prompt](https://github.com/denysdovhan/spaceship-prompt/)
 
-It will also setup the git aliases defined in `gitconfig.txt` (Don't forget to update all credentials defined using '<>' with your own)
+**NOTE:** A second terminal will open during installation. Once that second window has finished running its task return to the first terminal to input your git config detials (name & email)
