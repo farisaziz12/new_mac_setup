@@ -55,9 +55,29 @@ end tell'
   fi
 
   # Setup git aliases. Don't forget to change [user] Name and Email in .gitconfig
+  echo 'Please input your full name:'
+  read NAME
+  echo 'Please input your github email:'
+  read EMAIL
   touch ~/.gitconfig
-  cp ./gitconfig.txt ~/.gitconfig
+  head -n 41 ./gitconfig.txt > ~/.gitconfig
+  echo "  name = $NAME" >> ~/.gitconfig
+  echo "  email = $EMAIL" >> ~/.gitconfig
+  tail -n +44 ./gitconfig.txt >> ~/.gitconfig
   echo Git config setup
+
+  echo 'Here are your main git aliases'
+
+  echo 'st = status'
+  echo 'ci = commit'
+  echo 'br = branch'
+  echo 'co = checkout'
+  echo 'df = diff'
+  echo 'lg = log -p'
+  echo 'who = shortlog -s --'
+  echo 'up = pull'
+  echo 'pr = pull --rebase'
+  echo 'pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"'
 
   #ZSH Spaceship setup
   npm install -g spaceship-prompt
