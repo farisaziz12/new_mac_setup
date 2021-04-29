@@ -20,6 +20,7 @@ set +ex
   brew install --cask spotify
   brew install --cask github
   brew install --cask slack
+  brew install --cask raycast
   echo Apps installed
 
   # Install Essential Packages
