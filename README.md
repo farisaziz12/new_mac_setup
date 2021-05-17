@@ -37,7 +37,7 @@ This script will Install:
 - Github Desktop
 - Xcode Command Line Tools
 - Slack
-- Raycast
+- [Raycast](https://raycast.com/)
 - [ZSH Spaceship Prompt](https://github.com/denysdovhan/spaceship-prompt/)
 
 **NOTE:** A second terminal will open during installation. Once that second window has finished running its task return to the first terminal to input your git config detials (name & email)
