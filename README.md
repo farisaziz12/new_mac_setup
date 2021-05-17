@@ -13,7 +13,7 @@ Quick and easy setup for basic development environment on a new mac
 This script will Install:
 
 - Homebrew
-- Git
+- Git (+ Git aliases)
 - Node
 - NVM (Setup with Node Version 14)
 - Yarn
