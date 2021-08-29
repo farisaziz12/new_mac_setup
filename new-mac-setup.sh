@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 set +ex
 
@@ -8,19 +7,16 @@ set +ex
   # Install Basic Dev Apps
   brew install --cask 1password
   brew install --cask google-chrome
-  brew install --cask firefox-developer-edition
   brew install --cask postman
   brew install --cask sequel-pro
-  brew install --cask tower
-  brew install --cask transmit
   brew install --cask zoom
   brew install --cask visual-studio-code
-  brew install --cask android-studio
   brew install --cask notion
   brew install --cask spotify
   brew install --cask github
   brew install --cask slack
   brew install --cask raycast
+  brew install --cask iterm2
   echo Apps installed
 
   # Install Essential Packages
@@ -33,6 +29,16 @@ brew install wget
 brew install zsh
 brew install zsh-completions
 brew tap "homebrew/cask"
+
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "Oh My Zsh installed"
+# setup Powerlevel10k theme
+brew install romkatv/powerlevel10k/powerlevel10k
+echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+echo "Powerlevel10k theme setup"
+
 
 npm install --global yarn
 # Node Version Manager
@@ -57,9 +63,9 @@ end tell'
 
   # Setup git aliases. Don't forget to change [user] Name and Email in .gitconfig
   echo 'Please input your full name:'
-  read NAME
+  read -r NAME
   echo 'Please input your github email:'
-  read EMAIL
+  read -r EMAIL
   touch ~/.gitconfig
   head -n 41 ./gitconfig.txt > ~/.gitconfig
   echo "  name = $NAME" >> ~/.gitconfig
