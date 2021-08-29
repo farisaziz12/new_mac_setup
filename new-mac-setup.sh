@@ -86,8 +86,5 @@ end tell'
   echo 'pr = pull --rebase'
   echo 'pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"'
 
-  #ZSH Spaceship setup
-  npm install -g spaceship-prompt
-
 
 echo Setup Complete
