@@ -4,6 +4,13 @@ set +ex
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+  ARCHITECTURE=$(uname -m) # Gets system architecture
+  if [[ $ARCHITECTURE == arm* ]]; then
+    # Fixes brew issue with Rosetta 2 in ARM (Mac M1)
+     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/farisaziz/.zprofile
+     eval "$(/opt/homebrew/bin/brew shellenv)"
+  fi
+
   # Install Basic Dev Apps
   brew install --cask 1password
   brew install --cask google-chrome
