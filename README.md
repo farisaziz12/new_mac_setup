@@ -4,7 +4,7 @@ Quick and easy setup for basic development environment on a new mac
 
 ## Getting Started
 
-1. On your Mac terminal run `git clone git@github.com:farisaziz12/new_mac_setup.git`**or** if you don't have `git` setup you can download the zip and unzip the repo.
+1. On your Mac terminal run `git clone https://github.com/farisaziz12/new_mac_setup.git`**or** if you don't have `git` setup you can download the zip and unzip the repo.
 2. Change into the repository directory by running `cd new_mac_setup`
 3. To run the basic setup script, in the repo directory run `sh new-mac-setup.sh`
 
