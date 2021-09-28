@@ -27,8 +27,6 @@ This script will Install:
 - Firefox (Dev Edition
 - Postman
 - SQL Pro
-- Tower
-- Transmit
 - Zoom
 - VS Code
 - Android Studio
